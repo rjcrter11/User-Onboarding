@@ -1,3 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+#root,
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  line-height: 1.5;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=nasa-Q1p7bh3SHj8-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App {
-  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.user-form {
+  width: 35%;
+  margin: auto 35%;
+  padding: 2% 4%;
+  font-weight: bold;
+  background-color: rgba(178, 172, 184, 0.363);
+  box-shadow: 0 0 20px #000;
+}
+
+input {
+  margin-top: 2%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+  color: rgb(48, 48, 48);
+  border: 2px solid gray;
+}
+
+input.error {
+  border-color: red;
+}
+
+label {
+  display: block;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 10%;
+  margin-top: 8%;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  height: 10;
+  width: 10;
+}
+
+button {
+  width: 25%;
+  margin-top: 3%;
+  padding: 1.5% 0;
+  border-radius: 5px;
+  background-color: rgb(106, 18, 221);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+ul {
+  margin-top: 10%;
+}
+
+ul li {
+  color: white;
+  font-size: 0.7rem;
 }
